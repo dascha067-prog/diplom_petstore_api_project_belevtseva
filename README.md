@@ -108,10 +108,36 @@
 
 ### <img src="media/icons/allure_report.png" width="30">  Allure отчет
 
-Формирование отчета:
-локальный запуск: ввести в командной строке allure serve allure-results
-запуск через Jenkins: кликнуть кнопку Allure Report в боковом меню
+#### Формирование отчета:
 
-### Результаты запусков
+- **локальный запуск**: ввести в командной строке```allure serve allure-results```
+- **запуск через Jenkins**:  кликнуть кнопку ```Allure Report``` в боковом меню
+#### Результаты запусков:
+![Screenshot_3.png](media/image/Screenshot_3.png)
+![Screenshot_4.png](media/image/Screenshot_4.png)
+![Screenshot_5.png](media/image/Screenshot_5.png)
+Отчет позволяет получить детальную информацию по все шагам тестов, включая скриншоты, log - файлы и видео о прохождение теста
+(набор атач файлов зависит от типа тестов), а так же позволяет оперативно понять причину падения теста.
+---
+### <img src="media/icons/allure_testops.png" width="30 "> Интеграция с Allure TestOps
+
+### [Ссылка на проект в Allure TestOps](https://allure.autotests.cloud/project/5082/dashboards)
+
+#### Пример dashboard с общими результатами тестирования
+![Screenshot_6.png](media/image/Screenshot_6.png)
+#### Общий список всех тест-кейсов
+![Screenshot_7.png](media/image/Screenshot_7.png)
+#### Пример отчёта выполнения одного из автотестов
+![Screenshot_8.png](media/image/Screenshot_8.png)
+#### Пример dashboard с результатами запуска
+![Screenshot_9.png](media/image/Screenshot_9.png)
+#### История запуска тестовых наборов
+![Screenshot_10.png](media/image/Screenshot_10.png)
+
+---
+### <img src="media/icons/jira.png" width="30"> Интеграция с Jira
+### [Ссылка на проект в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1567)
 
 
+### <img src="media/icons/tg.png" width="30"> Оповещение о результатах прогона тестов в Telegram
+![Screenshot_11.png](media/image/Screenshot_11.png)
