@@ -1,33 +1,49 @@
+import allure
 import pytest
+
 from api.schemas import User, ErrorResponse
 from tests.test_data import VALID_USER_DATA, INVALID_USER_DATA
 
 
+@allure.epic("Petstore API")
+@allure.feature("User")
+@allure.tag("api")
+@allure.label("owner", "Belevtseva Darya")
+@pytest.mark.api
 class TestGetUser:
 
+    @allure.story("Получение пользователя")
+    @allure.title("Успешное получение пользователя по username")
+    @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.positive
     def test_get_existing_user(self, api_client):
-        # Act — создаём пользователя и получаем его по username
+        username = VALID_USER_DATA["username"]
+        allure.dynamic.parameter("username", username)
         api_client.create_user(VALID_USER_DATA)
-        response, result = api_client.get_user(VALID_USER_DATA["username"])
 
-        # Assert — проверяем успешный ответ
-        assert response.status_code == 200
-        assert result["username"] == VALID_USER_DATA["username"]
+        response, result = api_client.get_user(username)
 
-        # Валидация через Pydantic
-        User.model_validate(result)
+        with allure.step("Проверка, что возвращается статус код 200"):
+            assert response.status_code == 200
 
+        with allure.step("Проверка, что username соответствует ожидаемому"):
+            assert result["username"] == username
+
+        with allure.step("Проверка схемы ответа через Pydantic"):
+            User.model_validate(result)
+
+    @allure.story("Получение пользователя")
+    @allure.title("Получение несуществующего пользователя возвращает 404")
+    @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.negative
-    def test_get_nonexistent_user (self, api_client):
-        # Act — запрашиваем несуществующего пользователя
-        response, result = api_client.get_user(INVALID_USER_DATA)
+    def test_get_nonexistent_user(self, api_client):
+        username = INVALID_USER_DATA[-1]["username"]
+        allure.dynamic.parameter("username", username)
 
-        # Проверка кода
-        assert response.status_code == 404
+        response, result = api_client.get_user(username)
 
-        # Проверка структуры ошибки через Pydantic
-        error = ErrorResponse.model_validate(result)
+        with allure.step("Проверка, что возвращается статус код 404"):
+            assert response.status_code == 404
 
-        # Валидация через Pydantic
-        ErrorResponse.model_validate(result)
+        with allure.step("Проверка структуры ошибки через Pydantic"):
+            ErrorResponse.model_validate(result)

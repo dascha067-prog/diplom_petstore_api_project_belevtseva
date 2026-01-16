@@ -1,6 +1,9 @@
+# conftest.py
+import allure
 import pytest
 from api.client import ApiClient
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="function")
 def api_client():
-    return ApiClient(base_url="https://petstore.swagger.io/v2")
+    with allure.step("Инициализация API клиента"):
+        return ApiClient(base_url="https://petstore.swagger.io/v2")
