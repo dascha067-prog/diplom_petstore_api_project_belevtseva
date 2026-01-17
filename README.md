@@ -1,4 +1,4 @@
-<h1> Проект по тестированию сервиса "API "Petstore"
+<h1> Проект по тестированию сервиса "API Petstore"
 
 <a target="_blank" href="https://petstore.swagger.io/">Ссылка на "Petstore"</a>
 

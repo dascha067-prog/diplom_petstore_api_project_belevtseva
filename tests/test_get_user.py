@@ -7,6 +7,7 @@ from tests.test_data import VALID_USER_DATA, INVALID_USER_DATA
 
 @allure.epic("Petstore API")
 @allure.feature("User")
+@allure.label("layer", "api") 
 @allure.tag("api")
 @allure.label("owner", "Belevtseva Darya")
 @pytest.mark.api
