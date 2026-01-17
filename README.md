@@ -124,16 +124,15 @@
 ### [Ссылка на проект в Allure TestOps](https://allure.autotests.cloud/project/5082/dashboards)
 
 #### Пример dashboard с общими результатами тестирования
-![Screenshot_6.png](media/image/Screenshot_6.png)
-#### Общий список всех тест-кейсов
-![Screenshot_7.png](media/image/Screenshot_7.png)
-#### Пример отчёта выполнения одного из автотестов
-![Screenshot_8.png](media/image/Screenshot_8.png)
-#### Пример dashboard с результатами запуска
-![Screenshot_9.png](media/image/Screenshot_9.png)
-#### История запуска тестовых наборов
 ![Screenshot_10.png](media/image/Screenshot_10.png)
-
+#### Общий список всех тест-кейсов
+![Screenshot_6.png](media/image/Screenshot_6.png)
+#### Пример отчёта выполнения одного из автотестов
+![Screenshot_7.png](media/image/Screenshot_7.png)
+#### Пример dashboard с результатами запуска
+![Screenshot_8.png](media/image/Screenshot_8.png)
+#### История запуска тестовых наборов
+![Screenshot_9.png](media/image/Screenshot_9.png)
 ---
 ### <img src="media/icons/jira.png" width="30"> Интеграция с Jira
 ### [Ссылка на проект в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1567)
