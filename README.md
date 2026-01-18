@@ -121,8 +121,7 @@
 ![Screenshot_4.png](media/image/Screenshot_4.png)
 ![Screenshot_5.png](media/image/Screenshot_5.png)
 Отчет позволяет получить детальную информацию по все шагам тестов, включая скриншоты, log - файлы и видео о прохождение
-теста
-(набор атач файлов зависит от типа тестов), а так же позволяет оперативно понять причину падения теста.
+теста(набор атач файлов зависит от типа тестов), а так же позволяет оперативно понять причину падения теста.
 ---
 
 ### <img src="media/icons/allure_testops.png" width="30 "> Интеграция с Allure TestOps
@@ -155,5 +154,5 @@
 ### [Ссылка на задачу в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1567)
 
 ### <img src="media/icons/tg.png" width="30"> Оповещение о результатах прогона тестов в Telegram
-
 ![Screenshot_11.png](media/image/Screenshot_11.png)
+
