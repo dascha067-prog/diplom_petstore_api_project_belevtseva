@@ -1,6 +1,6 @@
-<h1> Проект по тестированию сервиса "API Petstore"
+<h1> Проект по тестированию сервиса "API Petstore" </h1>
 
-<a target="_blank" href="https://petstore.swagger.io/">Ссылка на "Petstore"</a>
+<a target="_blank" href="https://petstore.swagger.io/">Ссылка на сайт </a>
 
 ![site_testing.png](media/image/Screenshot_1.png)
 
@@ -120,8 +120,10 @@
 ![Screenshot_3.png](media/image/Screenshot_3.png)
 ![Screenshot_4.png](media/image/Screenshot_4.png)
 ![Screenshot_5.png](media/image/Screenshot_5.png)
+
 Отчет позволяет получить детальную информацию по все шагам тестов, включая скриншоты, log - файлы и видео о прохождение
 теста(набор атач файлов зависит от типа тестов), а так же позволяет оперативно понять причину падения теста.
+
 ---
 
 ### <img src="media/icons/allure_testops.png" width="30 "> Интеграция с Allure TestOps
@@ -153,6 +155,10 @@
 
 ### [Ссылка на задачу в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1567)
 
+![Screenshot_12.png](media/image/Screenshot_12.png)
+![Screenshot_13.png](media/image/Screenshot_13.png)
+
 ### <img src="media/icons/tg.png" width="30"> Оповещение о результатах прогона тестов в Telegram
+
 ![Screenshot_11.png](media/image/Screenshot_11.png)
 
